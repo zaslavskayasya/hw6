@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+    <title>lesson2</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+      <script >
+          var numberA = +(prompt("Пожалуйста, введите первое число "));
+          var symbol =  (prompt("Пожалуйста, введите знак желаемой математической операции "));
+          var numberB = +(prompt("Пожалуйста, введите второе число "));
+
+          function sum_ab (a, b) {
+              return a + b;
+          }
+          function mult_ab (a, b) {
+              return a * b;
+          }
+          function subt_ab (a, b) {
+              return a - b;
+          }
+          function div_ab (a, b) {
+              return a / b;
+          }
+    /**
+     *  basic construction with if_else
+     *
+     * */
+
+
+         /* if(symbol == "+") {
+              var z = sum_ab (numberA, numberB );
+              alert(z);
+          } else if (symbol == "*") {
+              var z = mult_ab (numberA, numberB );
+              alert(z);
+          } else if (symbol == "-") {
+              var z = subt_ab(numberA, numberB);
+              alert(z);
+          } else if( symbol == "/") {
+              var z = div_ab(numberA, numberB);
+              alert(z);
+          }
+
+           */
+          /**
+           * use switch construction with +
+           *
+           * */
+
+
+
+           switch (symbol) {
+               case '+' :
+               var x = sum_ab(numberA,numberB);
+                   alert(x);
+                   break;
+               case '-' :
+                   var x = subt_ab(numberA,numberB);
+                   alert(x);
+                   break;
+               case '*' :
+                   var x = mult_ab(numberA,numberB);
+                   alert(x);
+                   break;
+               case '/' :
+                   var x = div_ab(numberA,numberB);
+                   alert(x);
+                   break;
+               case '1':
+               case '2':
+               case '3':
+               case '4':
+               case '5':
+               case '6':
+               case '7':
+               case '8':
+               case '9':
+               case '0':
+                   alert("Вы ввели цифру, а не знак математической операции! Повторите сначала")
+                   break;
+               case '0':
+               case '':
+               case '':
+               case '':
+          }
+
+      </script>
+</body>
+</html>
